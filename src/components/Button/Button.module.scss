@@ -1,0 +1,62 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary {
+    color: #fff;
+    background: #0bdfdf;
+}
+
+.rounded {
+    border-radius: 999px;
+}
+
+.bordered {
+    color: #0bdfdf;
+    border-color: currentColor;
+}
+
+// Sizes
+.small {
+    padding: 2px 12px;
+    font-size: 1.4rem;
+}
+
+.medium {
+    padding: 4px 16px;
+    font-size: 1.6rem;
+}
+
+.large {
+    padding: 6px 20px;
+    font-size: 1.8rem;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.loading {
+    text-indent: -9999px;
+    pointer-events: none;
+
+    .loadingIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
