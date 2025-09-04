@@ -1,0 +1,104 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .comment_wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+
+        /* Input section */
+        .comment_input {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 16px;
+
+            .avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+            }
+
+            .input_box {
+                flex: 1;
+
+                .textarea {
+                    width: 100%;
+
+                    padding: 8px;
+                    resize: none;
+                    font-size: 14px;
+
+                    border: 1px solid #ccc;
+                    border-radius: 8px;
+                }
+
+                .reply_btn {
+                    margin-top: 6px;
+                    padding: 6px 14px;
+                    font-size: 13px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: #0d8ddb;
+                    }
+                }
+            }
+        }
+
+        /* Comments list */
+        .comments_list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .comment_item {
+                display: flex;
+                gap: 10px;
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+            .comment_body {
+                flex: 1;
+                text-align: justify;
+
+                .comment_header {
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    margin-bottom: 4px;
+
+                    .name {
+                        font-weight: bold;
+                    }
+
+                    .email {
+                        color: gray;
+                        font-size: 13px;
+                    }
+
+                    .time {
+                        color: #999;
+                        font-size: 12px;
+                    }
+                }
+
+                .content {
+                    margin: 0;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+
+}
