@@ -1,0 +1,49 @@
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: sans-serif;
+
+    .row {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+        vertical-align: middle;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        .left {
+            font-weight: 600;
+            color: #555;
+            text-align: left;
+        }
+
+        .right {
+            color: #222;
+            text-align: left;
+        }
+    }
+
+
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    select {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
