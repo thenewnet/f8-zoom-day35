@@ -1,0 +1,34 @@
+.menu {
+    list-style: none;
+    margin: 1rem 0;
+
+    li {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            display: inline-block; 
+            text-decoration: none;
+            color: #333;
+            background-color: #c0c0c0;
+            border: 1px solid #c0c0c0;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #0bdfdf;
+                color: #fff;
+            }
+
+            &.active {
+                background-color: #0bdfdf;
+                color: #fff;
+            }
+        }
+    }
+}
